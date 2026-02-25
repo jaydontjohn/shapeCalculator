@@ -1,3 +1,17 @@
+/*
+ * File: shapeCalc.c
+ * Author: Jaydon John
+ * Description:
+ * A command-line shape calculator that computes
+ * area (2D) and surface area or volume (3D)
+ * for various geometric shapes.
+ *
+ * Compile with:
+ * gcc shapeCalc.c -o shapeCalc -lm
+ *
+ * Run with:
+ * ./shapeCalc
+ */
 #include<stdio.h>
 #include<math.h>
 #define PI 3.14159
@@ -9,7 +23,7 @@ int main(){
     char option;
     char shape;
     int whichCalc;
-    printf("\nWelcome to shape calulator, please type in \"2\" for 2D shape and \"3\" for 3D shape calculation: ");
+    printf("\nWelcome to shape calculator, please type in \"2\" for 2D shape and \"3\" for 3D shape calculation: ");
     scanf("%c",&option);
     getchar(); // to consume the newline character left by scanf
 
@@ -23,7 +37,7 @@ int main(){
     }
     //3d shape
     if(option == '3'){
-        printf("\nNow choose what 3D shape you want to calculate the area for");
+        printf("\nNow choose what 3D shape you want to calculate the area or volume for");
         printf("\n C for Cube   S for Sphere    P for Pyramid    R for Rectangular Prism");
         scanf("%c", &shape);
         getchar(); // to consume the newline character left by scanf

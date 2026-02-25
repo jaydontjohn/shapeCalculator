@@ -1,0 +1,7 @@
+# Compiled output
+shapeCalc
+*.o
+*.exe
+
+# Mac
+.DS_Store
